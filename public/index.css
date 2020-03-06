@@ -1,0 +1,84 @@
+body {
+    color: #573515;
+    background: #fad000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 24px;
+}
+
+.menu-section {
+    background: #fff;
+    margin: 0 0 24px 0;
+}
+
+.menu-section-list {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #c60;
+}
+
+li {
+    /*max-width: 25%;*/
+    flex-basis: 25%;
+}
+
+.cap {
+    display: inline-block;
+}
+.cap:after {
+    color: #fad000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    content: "☆";
+    display: inherit;
+}
+
+.cap-100:after {
+    content: "★";
+}
+
+.beer-details {
+    margin-left: 12px;
+    vertical-align: top;
+}
+
+h4, h5, h6 {
+    margin: 0 0 12px 0;
+}
+
+h4, h5 {
+    font-size: 18px;
+}
+
+h4 {
+    padding: 12px;
+    color: #573515;
+    /*background: #573515;*/
+}
+
+.beer-info {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    justify-content: flex-start;
+}
+
+.beer-containers {
+    display: none;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}

@@ -2,7 +2,7 @@ body {
     color: #573515;
     background: #FBC95B;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     margin: 12px;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .menu-section-header {
-    padding: 12px;
+    padding: 12px 12px 0 12px;
 }
 
 .menu-section-list {
@@ -34,7 +34,7 @@ a.track-click {
 }
 
 em {
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     font-style: normal;
 }
@@ -50,7 +50,7 @@ li {
 .cap:after {
     color: #FA8F05;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
+    font-size: 16px;
     content: "☆";
     display: inherit;
 }
@@ -60,7 +60,7 @@ li {
 }
 
 h4, h5, h6 {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
     font-weight: normal;
 }
@@ -75,6 +75,7 @@ h6 {
 
 h4 {
     color: #573515;
+    font-weight: bold;
     /*background: #573515;*/
 }
 
@@ -103,6 +104,6 @@ h6 {
 }
 
 img {
-    max-width: 50px;
+    max-width: 32px;
     height: auto;
 }

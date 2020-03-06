@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 const express = require('express');
 const ejs = require('ejs');
 
+const port = process.env.PORT || 8080;
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -37,4 +38,4 @@ app.get('/', (req, res) => {
         res.send('Haistakaa kaikki vittu');
     }
 });
-app.listen(8081);
+app.listen(port);

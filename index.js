@@ -9,6 +9,7 @@ app.use(express.static('public'));
 const venueMap = {
     blackdoor: 'https://untappd.com/v/black-door/4901471',
     sori: 'https://untappd.com/v/sori-taproom/5680470',
+    kellasmallari: 'https://untappd.com/v/mallaskellari/8113787',
 };
 
 const fetchSori = async (url) => {

@@ -94,6 +94,10 @@ h6 {
     display: none;
 }
 
+.beer-prices {
+    display: none;
+}
+
 .beer-details {
     margin-left: 12px;
     vertical-align: top;

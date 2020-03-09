@@ -12,7 +12,7 @@ const venueMap = {
     kellasmallari: 'https://untappd.com/v/mallaskellari/8113787',
 };
 
-const fetchSori = async (url) => {
+const fetchBeers = async (url, title) => {
     const resp = await fetch(url);
     const text = await resp.text();
     const $ = cheerio.load(text);
@@ -21,7 +21,7 @@ const fetchSori = async (url) => {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sori</title>
+    <title>${title}</title>
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -32,7 +32,7 @@ ${$('div.menu-area').html()}
 app.get('/', (req, res) => {
     const url = req.query.venue;
     if (venueMap[url]) {
-        fetchSori(venueMap[url]).then((html) => res.send(html))
+        fetchBeers(venueMap[url], title).then((html) => res.send(html))
     } else {
         res.send('Haistakaa kaikki vittu');
     }

@@ -32,7 +32,7 @@ ${$('div.menu-area').html()}
 app.get('/', (req, res) => {
     const url = req.query.venue;
     if (venueMap[url]) {
-        fetchBeers(venueMap[url], title).then((html) => res.send(html))
+        fetchBeers(venueMap[url], url).then((html) => res.send(html))
     } else {
         res.send('Haistakaa kaikki vittu');
     }

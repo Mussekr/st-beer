@@ -10,6 +10,7 @@ const venueMap = {
     blackdoor: 'https://untappd.com/v/black-door/4901471',
     sori: 'https://untappd.com/v/sori-taproom/5680470',
     kellasmallari: 'https://untappd.com/v/mallaskellari/8113787',
+    rooster: 'https://untappd.com/v/cafe-rooster/2428548',
 };
 
 const fetchBeers = async (url, title) => {
